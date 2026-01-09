@@ -96,6 +96,14 @@ a:hover {
   50% { text-shadow: 0 0 3px #00ccff, 0 0 7px #00ccff; }
 }
 
+.btn {
+    padding: 10px 15px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
 section {
   scroll-margin-top: 80px;
   padding: 2rem 0;
