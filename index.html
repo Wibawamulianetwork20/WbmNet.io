@@ -1,203 +1,276 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Wibawamulia.Network - Internet cepat dan stabil untuk rumah dan usaha di Cibarusah, Bekasi.">
-<meta name="theme-color" content="#0d6efd">
-<title>Wibawamulia.Network</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-192.png">
+  <meta name="description"
+        content="Wibawamulia.Network - Internet cepat dan stabil untuk rumah dan usaha di Cibarusah, Bekasi.">
+  <meta name="theme-color" content="#0d6efd">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <title>Wibawamulia.Network</title>
 
-<style>
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
-}
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
 
-.navbar {
-  backdrop-filter: blur(10px);
-}
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 
-.hero {
-  background: linear-gradient(135deg, #0d6efd, #00c6ff);
-  padding: 100px 20px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  >
 
-.hero h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-.hero .btn {
-  background: white;
-  color: #0d6efd;
-  font-weight: bold;
-  border-radius: 30px;
-  padding: 10px 25px;
-  transition: 0.3s;
-}
-
-.hero .btn:hover {
-  transform: scale(1.05);
-}
-
-.card {
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.section-title {
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-footer {
-  background: #111;
-}
-
-.floating-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-</style>
+  <!-- CSS WBM.NET -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Wibawamulia.Network</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+
+    <a class="navbar-brand fw-bold" href="#">
+      Wibawamulia.Network
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#nav"
+      aria-controls="nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="nav">
+
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#paket">Paket</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">Kontak</a>
+        </li>
+
       </ul>
-      <button id="installBtn" class="btn btn-outline-light ms-3" style="display:none;">Install App</button>
+
+      <button
+        id="installBtn"
+        class="btn btn-outline-light ms-3"
+        style="display:none;"
+      >
+        <i class="fas fa-download me-1"></i>
+        Install App
+      </button>
+
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
+
+<!-- ================= HERO ================= -->
 <header class="hero text-white text-center">
+
   <div class="container">
+
     <h1>Internet Cepat & Stabil</h1>
-    <p class="lead">Solusi terbaik untuk rumah & usaha Anda</p>
-    <a href="https://e.ebilling.id/billing/registrasi/?account=3116&referal=2412110540" target="_blank" rel="noopener" class="btn mt-3">
+
+    <p class="lead">
+      Solusi terbaik untuk rumah & usaha Anda
+    </p>
+
+    <a
+      href="https://e.ebilling.id/billing/registrasi/?account=3116&referal=2412110540"
+      target="_blank"
+      rel="noopener"
+      class="btn mt-3"
+    >
+      <i class="fas fa-user-plus me-2"></i>
       REGISTER SEKARANG
     </a>
+
   </div>
+
 </header>
 
-<!-- TENTANG -->
+
+<!-- ================= TENTANG ================= -->
 <section id="tentang" class="py-5">
+
   <div class="container text-center">
-    <h2 class="section-title">Tentang Kami</h2>
+
+    <h2 class="section-title">
+      Tentang Kami
+    </h2>
+
     <p class="col-md-8 mx-auto">
-      Wbm.Net menyediakan layanan internet cepat dan stabil dengan harga terjangkau
-      serta dukungan teknis responsif untuk wilayah Cibarusah dan sekitarnya.
+      Wbm.Net menyediakan layanan internet cepat dan stabil
+      dengan harga terjangkau serta dukungan teknis responsif
+      untuk wilayah Cibarusah dan sekitarnya.
     </p>
+
   </div>
+
 </section>
 
-<!-- PAKET -->
+
+<!-- ================= PAKET ================= -->
 <section id="paket" class="py-5 bg-light">
+
   <div class="container">
-    <h2 class="section-title text-center">Paket Layanan</h2>
+
+    <h2 class="section-title text-center">
+      Paket Layanan
+    </h2>
+
     <div class="row g-4">
 
+      <!-- 5 Mbps -->
       <div class="col-md-4">
+
         <div class="card p-4 text-center h-100">
-          <h5><i class="fas fa-wifi"></i> Basic</h5>
-          <h3 class="text-primary">5 Mbps</h3>
-          <p>Rp150.000 / bulan</p>
+
+          <h5>
+            <i class="fas fa-wifi"></i>
+            Basic
+          </h5>
+
+          <h3 class="text-primary">
+            5 Mbps
+          </h3>
+
+          <p>
+            Rp150.000 / bulan
+          </p>
+
         </div>
+
       </div>
 
+
+      <!-- 7 Mbps -->
       <div class="col-md-4">
+
         <div class="card p-4 text-center h-100">
-          <h5><i class="fas fa-home"></i> Family</h5>
-          <h3 class="text-primary">7 Mbps</h3>
-          <p>Rp170.000 / bulan</p>
+
+          <h5>
+            <i class="fas fa-home"></i>
+            Family
+          </h5>
+
+          <h3 class="text-primary">
+            7 Mbps
+          </h3>
+
+          <p>
+            Rp170.000 / bulan
+          </p>
+
         </div>
+
       </div>
 
+
+      <!-- 10 Mbps -->
       <div class="col-md-4">
+
         <div class="card p-4 text-center h-100">
-          <h5><i class="fas fa-briefcase"></i> Profesional</h5>
-          <h3 class="text-primary">10 Mbps</h3>
-          <p>Rp200.000 / bulan</p>
+
+          <h5>
+            <i class="fas fa-briefcase"></i>
+            Profesional
+          </h5>
+
+          <h3 class="text-primary">
+            10 Mbps
+          </h3>
+
+          <p>
+            Rp200.000 / bulan
+          </p>
+
         </div>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
-<!-- KONTAK -->
+
+<!-- ================= KONTAK ================= -->
 <section id="kontak" class="py-5">
+
   <div class="container text-center">
-    <h2 class="section-title">Hubungi Kami</h2>
-    <p><i class="fas fa-phone"></i> 0858-1723-0536</p>
-    <p><i class="fas fa-envelope"></i> wbmnet2020@gmail.com</p>
-    <p><i class="fas fa-map-marker-alt"></i> Cibarusah, Bekasi</p>
+
+    <h2 class="section-title">
+      Hubungi Kami
+    </h2>
+
+    <p>
+      <i class="fas fa-phone"></i>
+      0858-1723-0536
+    </p>
+
+    <p>
+      <i class="fas fa-envelope"></i>
+      wbmnet2020@gmail.com
+    </p>
+
+    <p>
+      <i class="fas fa-map-marker-alt"></i>
+      Cibarusah, Bekasi
+    </p>
+
   </div>
+
 </section>
 
+
+<!-- ================= FOOTER ================= -->
 <footer class="text-center text-white py-4">
+
   &copy; 2026 Wibawamulia.Network
+
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/6285817230536" target="_blank" 
-   class="btn btn-success rounded-circle floating-btn shadow-lg">
-   <i class="fab fa-whatsapp fa-lg"></i>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a
+  href="https://wa.me/6285817230536"
+  target="_blank"
+  rel="noopener"
+  class="btn btn-success rounded-circle floating-btn shadow-lg"
+  aria-label="Chat WhatsApp"
+>
+  <i class="fab fa-whatsapp fa-lg"></i>
 </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('serviceworker.js');
-}
-
-/* PWA Install */
-let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  installBtn.style.display = 'inline-block';
-
-  installBtn.addEventListener('click', () => {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(() => {
-      deferredPrompt = null;
-      installBtn.style.display = 'none';
-    });
-  });
-});
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
 </script>
+
+<!-- JavaScript WBM.NET -->
+<script src="app.js"></script>
 
 </body>
 </html>
