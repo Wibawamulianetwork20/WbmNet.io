@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="WBM.NET - Internet Rumah Cibarusah 100% Fiber Optic. Unlimited Tanpa FUP. Cek Jangkauan, Tes Kecepatan, Daftar Online">
+  <title>WBM.NET - Internet Fiber Optic #1 di Cibarusah</title>
+  <link rel="icon" href="https://placehold.co/32x32/0ea5e9/FFFFFF/png?text=W" type="image/png">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="WBM.NET - Internet Fiber Optic #1 di Cibarusah">
+  <meta property="og:description" content="Internet Rumah 100% Fiber Optic. Unlimited Tanpa FUP. Cek Jangkauan & Daftar Online">
+  <meta property="og:image" content="https://placehold.co/1200x630/0ea5e9/FFFFFF/png?text=WBM.NET">
+  <meta property="og:url" content="https://wbmnet.com">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <!-- SCHEMA LOCAL BUSINESS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InternetServiceProvider",
+    "name": "WBM.NET",
+    "image": "https://placehold.co/1200x630/0ea5e9/FFFFFF/png?text=WBM.NET",
+    "address": {"@type": "PostalAddress","addressLocality": "Cibarusah","addressRegion": "Jawa Barat"},
+    "telephone": "+628xx",
+    "url": "https://wbmnet.com",
+    "openingHours": "Mo-Su 08:00-21:00"
+  }
+  </script>
+
+  <!-- META PIXEL + GA4 - GANTI ID KAMU -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <script>
+ !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-900" href="#"><i class="bi bi-wifi"></i> WBM<span>NET</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#cek-area">Cek Area</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speedtest">Speedtest</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+        <a href="https://wa.me/628xx?text=Halo%20WBM.NET%20saya%20mau%20tanya%20internet" target="_blank" class="btn btn-wa-nav"><i class="bi bi-whatsapp"></i> Hubungi Kami</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO + CEK AREA -->
+  <section class="hero" id="cek-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12 text-center text-lg-start" data-aos="fade-right">
+          <h1><span id="typing-text">Internet Rumah Stabil</span> <br>Untuk Keluarga Anda</h1>
+          <p>Nikmati koneksi internet <b>100% Fiber Optic</b> dari WBM.NET. Unlimited Tanpa FUP</p>
+          <div class="cek-area-box">
+            <h5>Cek Jangkauan Area Anda</h5>
+            <div class="input-group">
+              <input type="text" id="inputArea" class="form-control" placeholder="Contoh: Cibarusah Jaya RT 03">
+              <button class="btn btn-cek" id="btnCekArea">Cek Sekarang</button>
+            </div>
+            <div id="hasilCekArea" class="mt-2"></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop" class="img-fluid hero-img" alt="Internet Fiber Optic WBM.NET Cibarusah" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <div class="wave-bottom"></div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof" id="social-proof">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-12 col-md-4" data-aos="fade-up"><h3><span id="counterPelanggan">0</span>+</h3><p>Pelanggan Aktif</p></div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100"><h3>99.9%</h3><p>Uptime Jaringan</p></div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200"><h3>24/7</h3><p>Layanan Pelanggan</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET -->
+  <section id="paket" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Pilihan Paket Internet Rumah</h2>
+        <p class="section-subtitle">Biaya Instalasi: <span class="text-highlight">Rp 300.000</span>. Termasuk Router WiFi 6</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100"><div class="card-paket" id="paket-10"><h4>Paket 10</h4><div class="paket-speed">10 <span>Mbps</span></div><div class="paket-harga">Rp 150.000<span>/bulan</span></div><ul><li><i class="bi bi-check"></i> Unlimited Tanpa FUP</li><li><i class="bi bi-check"></i> Cocok 1-2 HP</li></ul><a href="#daftar" class="btn btn-paket" data-paket="Paket 10 - 150.000">Pilih Paket</a></div></div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200"><div class="card-paket best" id="paket-15"><div class="paket-badge">Rekomendasi</div><h4>Paket 15</h4><div class="paket-speed">15 <span>Mbps</span></div><div class="paket-harga">Rp 200.000<span>/bulan</span></div><ul><li><i class="bi bi-check"></i> Unlimited Tanpa FUP</li><li><i class="bi bi-check"></i> Cocok 3-4 HP + TV</li></ul><a href="#daftar" class="btn btn-paket" data-paket="Paket 15 - 200.000">Pilih Paket</a></div></div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300"><div class="card-paket" id="paket-20"><h4>Paket 20</h4><div class="paket-speed">20 <span>Mbps</span></div><div class="paket-harga">Rp 250.000<span>/bulan</span></div><ul><li><i class="bi bi-check"></i> Unlimited Tanpa FUP</li><li><i class="bi bi-check"></i> Cocok 5-6 HP + Game</li></ul><a href="#daftar" class="btn btn-paket" data-paket="Paket 20 - 250.000">Pilih Paket</a></div></div>
+        <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400"><div class="card-paket" id="paket-25"><h4>Paket 25</h4><div class="paket-speed">25 <span>Mbps</span></div><div class="paket-harga">Rp 300.000<span>/bulan</span></div><ul><li><i class="bi bi-check"></i> Unlimited Tanpa FUP</li><li><i class="bi bi-check"></i> Cocok 8+ Device</li></ul><a href="#daftar" class="btn btn-paket" data-paket="Paket 25 - 300.000">Pilih Paket</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI BUKTI -->
+  <section id="galeri" class="section-padding bg-blue-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Bukti Pemasangan Hari Ini</h2>
+        <p class="section-subtitle">Tim kami aktif melayani di seluruh Cibarusah</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-3" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400" class="img-fluid galeri-img" loading="lazy" alt="Pemasangan WBM.NET"></div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=400" class="img-fluid galeri-img" loading="lazy" alt="Teknisi WBM.NET"></div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400" class="img-fluid galeri-img" loading="lazy" alt="Instalasi Fiber Optic"></div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1544197150-cca4cb16318a?q=80&w=400" class="img-fluid galeri-img" loading="lazy" alt="Router WiFi 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEEDTEST -->
+  <section id="speedtest" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up"><h2 class="section-title">Tes Kecepatan Internet Anda</h2></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-12" data-aos="zoom-in">
+          <div class="speedtest-card">
+            <div id="speedtest-container">
+              <div class="speedtest-gauge"><div class="gauge-label">Download</div><div id="download-speed">0.00</div><div class="gauge-unit">Mbps</div></div>
+              <div class="speedtest-gauge"><div class="gauge-label">Upload</div><div id="upload-speed">0.00</div><div class="gauge-unit">Mbps</div></div>
+              <div class="speedtest-gauge"><div class="gauge-label">Ping</div><div id="ping-speed">0</div><div class="gauge-unit">ms</div></div>
+            </div>
+            <button id="start-test" class="btn btn-cta-primary btn-lg">Mulai Tes Kecepatan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section-padding bg-blue-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up"><h2 class="section-title">Pertanyaan Umum</h2></div>
+      <div class="accordion" id="accordionFAQ">
+        <div class="accordion-item" data-aos="fade-up"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Apakah ada FUP?</button></h2><div id="faq1" class="accordion-collapse collapse show"><div class="accordion-body">Tidak ada. Semua paket kami <b>Unlimited Tanpa FUP</b>. Pakai sepuasnya 24 jam.</div></div></div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Berapa lama proses pemasangan?</button></h2><div id="faq2" class="accordion-collapse collapse"><div class="accordion-body">Maksimal 1x24 jam setelah survey. Tim kami akan koordinasi dengan Anda.</div></div></div>
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Bagaimana jika internet gangguan?</button></h2><div id="faq3" class="accordion-collapse collapse"><div class="accordion-body">Lapor via WA. Garansi perbaikan maksimal 1x24 jam. Layanan 24/7.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM DAFTAR -->
+  <section id="daftar" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-12" data-aos="fade-up">
+          <div class="text-center mb-5"><h2 class="section-title">Form Pendaftaran</h2></div>
+          <div class="form-card">
+            <form id="formDaftar">
+              <div class="row">
+                <div class="col-md-6 col-12 mb-3"><label class="form-label">Nama Lengkap</label><input type="text" name="nama" class="form-control" required></div>
+                <div class="col-md-6 col-12 mb-3"><label class="form-label">No WhatsApp</label><input type="tel" name="wa" class="form-control" placeholder="08xxxxxxxxxx" required></div>
+              </div>
+              <div class="mb-3"><label class="form-label">Alamat Lengkap</label><textarea name="alamat" class="form-control" rows="3" required></textarea></div>
+              <div class="mb-3"><label class="form-label">Pilih Paket</label><select name="paket" id="selectPaket" class="form-select" required><option value="">-- Pilih Paket --</option><option value="Paket 10 - 150.000">Paket 10 Mbps - Rp 150.000</option><option value="Paket 15 - 200.000">Paket 15 Mbps - Rp 200.000</option><option value="Paket 20 - 250.000">Paket 20 Mbps - Rp 250.000</option><option value="Paket 25 - 300.000">Paket 25 Mbps - Rp 300.000</option></select></div>
+              <button type="submit" class="btn btn-cta-primary w-100">Kirim Pendaftaran via WhatsApp</button>
+              <div id="pesanSukses" class="alert alert-success mt-3 d-none">Mengarahkan ke WhatsApp...</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- GOOGLE MAPS / KONTAK -->
+<section id="kontak" class="section-padding bg-blue-light">
+  <div class="container">
+    <div class="text-center mb-4" data-aos="fade-up"><h2 class="section-title">Kantor & Area Layanan Kami</h2><p class="section-subtitle">Silahkan kunjungi kantor WBM.Net Cibarusah</p></div>
+    <div data-aos="zoom-in">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126873.72143158193!2d107.102208!3d-6.4192512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6997007005b135%3A0x405312137d1467c!2sWBM.Net!5e0!3m2!1sid!2sid!4v1787693232438!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div class="text-center mt-4">
+      <div id="statusToko" class="status-toko mb-2"></div>
+      <p class="mb-2"><i class="bi bi-clock"></i> <b>Jam Operasional:</b> Senin - Minggu | 08:00 - 21:00 WIB</p>
+      <a href="https://maps.app.goo.gl/V6LbW7danTg8eb9X9" target="_blank" class="btn btn-cta-primary"><i class="bi bi-geo-alt-fill"></i> Lihat Rute ke Kantor</a>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer><div class="container text-center py-4"><p class="mb-1">© 2026 WBM.NET - Layanan Internet Fiber Optic Cibarusah</p><p class="mb-0"><small>Website ini dilindungi reCAPTCHA dan berlaku Kebijakan Privasi</small></p></div></footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/628xx?text=Halo%20WBM.NET%20saya%20mau%20daftar%20internet" target="_blank" class="btn-float-wa" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <!-- POPUP SPEEDTEST -->
+  <div id="speedtestPopup" class="speedtest-popup"><div class="popup-content"><span class="close-popup">×</span><h3>Hasil Tes Kecepatan Anda</h3><div class="hasil-speed"><span id="hasilDownload">0</span> Mbps</div><p id="rekomendasiText"></p><a href="#paket" id="btnRekomendasiPaket" class="btn btn-cta-primary">Lihat Paket Rekomendasi</a></div></div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookieBanner" class="alert alert-info text-center fixed-bottom m-3 d-none">
+    Website ini menggunakan cookies untuk meningkatkan pengalaman & iklan.
+    <button onclick="localStorage.setItem('cookie','ok'); this.parentElement.classList.add('d-none')" class="btn btn-sm btn-primary ms-2">Oke</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
