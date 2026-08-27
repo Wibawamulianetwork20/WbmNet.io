@@ -55,48 +55,46 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 5. FORM KE GOOGLE SHEET + TELEGRAM
-  document.getElementById('formDaftar').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type=submit]');
-    btn.innerText = "Mengirim...";
-    btn.disabled = true;
+document.getElementById('formDaftar').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('button[type=submit]');
+  btn.innerText = "Mengirim...";
+  btn.disabled = true;
 
-    let wa = this.wa.value;
-    if(wa.startsWith('08')) wa = '62' + wa.substring(1);
+  let wa = this.wa.value;
+  if(wa.startsWith('08')) wa = '62' + wa.substring(1);
 
-    const formData = {
-      nama: this.nama.value,
-      wa: wa,
-      alamat: this.alamat.value,
-      paket: this.paket.value
-    };
+  // PAKAI FORMDATA BUKAN JSON
+  const formData = new FormData();
+  formData.append('nama', this.nama.value);
+  formData.append('wa', wa);
+  formData.append('alamat', this.alamat.value);
+  formData.append('paket', this.paket.value);
 
-    fetch('https://script.google.com/macros/s/AKfycbzT1NgBeeqJvs1CQxfqLhFd9IWdnwMMW-XGziGIf4IVqbZvuWdiBdFUy5C4G3bzfzmLmw/exec', {
-      method: 'POST',
-      body: JSON.stringify(formData)
-    })
-   .then(response => response.text())
-   .then(result => {
-      if(result === "OK"){
-        document.getElementById('pesanSukses').innerText = "✅ Pendaftaran Berhasil! Tim WBM.NET akan menghubungi Anda 1x24 jam";
-        document.getElementById('pesanSukses').classList.remove('d-none');
-        this.reset();
-        if(typeof fbq!== 'undefined') fbq('track', 'Lead');
-        if(typeof gtag!== 'undefined') gtag('event', 'submit_form');
-      } else {
-        alert("Gagal: " + result);
-      }
-    })
-   .catch(error => {
-      alert("Gagal kirim. Cek koneksi/CORS");
-      console.log(error);
-    })
-   .finally(() => {
-      btn.innerText = "Kirim Pendaftaran";
-      btn.disabled = false;
-    });
+  fetch('https://script.google.com/macros/s/AKfycbzT1NgBeeqJvs1CQxfqLhFd9IWdnwMMW-XGziGIf4IVqbZvuWdiBdFUy5C4G3bzfzmLmw/exec', {
+    method: 'POST',
+    body: formData // GA PAKAI HEADERS, GA PAKAI JSON
+  })
+ .then(response => response.text())
+ .then(result => {
+    if(result === "OK"){
+      document.getElementById('pesanSukses').innerText = "✅ Pendaftaran Berhasil! Tim WBM.NET akan menghubungi Anda 1x24 jam";
+      document.getElementById('pesanSukses').classList.remove('d-none');
+      this.reset();
+      if(typeof fbq!== 'undefined') fbq('track', 'Lead');
+    } else {
+      alert("Gagal: " + result);
+    }
+  })
+ .catch(error => {
+    alert("Gagal kirim. Cek koneksi/CORS");
+    console.log(error);
+  })
+ .finally(() => {
+    btn.innerText = "Kirim Pendaftaran";
+    btn.disabled = false;
   });
-
+});
   // 6. SPEEDTEST SIMULASI
   const startBtn = document.getElementById('start-test');
   const popup = document.getElementById('speedtestPopup');
